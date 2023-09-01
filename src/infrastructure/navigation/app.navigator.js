@@ -5,10 +5,9 @@ import { Text, Button } from "react-native";
 
 import { SafeArea } from "../../components/utility/safe-area.component";
 
-import { AuthenticationContext } from "../../services/authentication/authentication.context";
 import { RestaurantsNavigator } from "./restaurants.navigator";
 import { MapScreen } from "../../features/map/screens/map.screen";
-
+import { AuthenticationContext } from "../../services/authentication/authentication.context";
 const Tab = createBottomTabNavigator();
 
 const TAB_ICON = {
@@ -26,7 +25,6 @@ const Settings = () => {
     </SafeArea>
   );
 };
-
 const createScreenOptions = ({ route }) => {
   const iconName = TAB_ICON[route.name];
   return {
